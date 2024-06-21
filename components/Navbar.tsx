@@ -14,91 +14,101 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 export default function Header() {
   return (
     <header className="bg-muted py-4 shadow">
-        <div className="container mx-auto flex items-center justify-between px-4 md:px-6">
+      <div className="container mx-auto flex items-center justify-between px-4 md:px-6">
+        <Link
+          href="/"
+          className="flex items-center gap-2 font-semibold"
+          prefetch={false}
+        >
+          <HomeIcon className="h-6 w-6" />
+          <span>Fractional Estates</span>
+        </Link>
+
+        <nav className="hidden space-x-4 md:flex">
           <Link
             href="/"
-            className="flex items-center gap-2 font-semibold"
+            className="hover:text-primary"
             prefetch={false}
           >
-            <HomeIcon className="h-6 w-6" />
-            <span>Fractional Estates</span>
+            Home
           </Link>
-          
-          <nav className="hidden space-x-4 md:flex">
-            <Link href="/visuals/investmentDashboard" className="hover:text-primary" prefetch={false}>
-              My Investment
-            </Link>
-            <Link href="/dashboards/dashboardOne" className="hover:text-primary" prefetch={false}>
-              dashboard
-            </Link>
-            <Link href="/contactForm" className="hover:text-primary" prefetch={false}>
-              Contact Us
-            </Link>
-          </nav>
-          <div className="flex items-center space-x-4">
-            <Button variant="secondary" size="sm">
-              Connect Wallet
-            </Button>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <MenuIcon className="h-6 w-6" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem>
-                  <Link
-                    href="#"
-                    className="flex items-center gap-2"
-                    prefetch={false}
-                  >
-                    <ExpandIcon className="h-4 w-4" />
-                    Explore
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link
-                    href="#"
-                    className="flex items-center gap-2"
-                    prefetch={false}
-                  >
-                    <ShoppingCartIcon className="h-4 w-4" />
-                    Buy
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link
-                    href="#"
-                    className="flex items-center gap-2"
-                    prefetch={false}
-                  >
-                    <ShareIcon className="h-4 w-4" />
-                    Sell
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link
-                    href="#"
-                    className="flex items-center gap-2"
-                    prefetch={false}
-                  >
-                    <InfoIcon className="h-4 w-4" />
-                    About
-                  </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                  <div className="flex items-center gap-2">
-                    <ThemeSwitch className="h-4 w-4" />
-                    <span>Switch Theme</span>
-                  </div>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-            
-          </div>
+          <Link
+            href="/visuals/investmentDashboard"
+            className="hover:text-primary"
+            prefetch={false}
+          >
+            My Investment
+          </Link>
+          <Link
+            href="/contactForm"
+            className="hover:text-primary"
+            prefetch={false}
+          >
+            Contact Us
+          </Link>
+        </nav>
+        <div className="flex items-center space-x-4">
+          <Button variant="secondary" size="sm">
+            Connect Wallet
+          </Button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <MenuIcon className="h-6 w-6" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+              <DropdownMenuItem>
+                <Link
+                  href="/avanzo"
+                  className="flex items-center gap-2"
+                  prefetch={false}
+                >
+                  <ExpandIcon className="h-4 w-4" />
+                  Explore
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link
+                  href="#"
+                  className="flex items-center gap-2"
+                  prefetch={false}
+                >
+                  <ShoppingCartIcon className="h-4 w-4" />
+                  Buy
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link
+                  href="#"
+                  className="flex items-center gap-2"
+                  prefetch={false}
+                >
+                  <ShareIcon className="h-4 w-4" />
+                  Sell
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link
+                  href="https://avanzo.gitbook.io/whitepaper"
+                  className="flex items-center gap-2"
+                  prefetch={false}
+                >
+                  <InfoIcon className="h-4 w-4" />
+                  About
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <div className="flex items-center gap-2">
+                  <ThemeSwitch className="h-4 w-4" />
+                  <span>Switch Theme</span>
+                </div>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
-        
-      </header>
+      </div>
+    </header>
   );
 }
 
