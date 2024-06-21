@@ -5,8 +5,7 @@ import Header from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Providers } from './providers';
 import { headers } from 'next/headers'
-import { cookieToInitialState } from 'wagmi'
-import { config } from "../config";
+import '@rainbow-me/rainbowkit/styles.css';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,16 +17,12 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
-  const initialState = cookieToInitialState(
-    config,
-    headers().get('cookie')
-  )
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="bg-gray-50 dark:bg-slate-800">
-        <Providers initialState={initialState}>
+        <Providers>
           <Header />
               <div>
                 {children}

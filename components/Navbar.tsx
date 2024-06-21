@@ -10,6 +10,8 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@/components/ui/dropdown-menu"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+
 
 export default function Header() {
   return (
@@ -48,9 +50,7 @@ export default function Header() {
           </Link>
         </nav>
         <div className="flex items-center space-x-4">
-          <Button variant="secondary" size="sm">
-            Connect Wallet
-          </Button>
+            <ConnectButton variant="secondary" size="sm" />
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="icon">
