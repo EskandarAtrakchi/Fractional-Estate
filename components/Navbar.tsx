@@ -29,10 +29,7 @@ export default function Header() {
               My Investment
             </Link>
             <Link href="/dashboards/dashboardOne" className="hover:text-primary" prefetch={false}>
-              dashboardOne
-            </Link>
-            <Link href="/dashboards/dashboardTwo" className="hover:text-primary" prefetch={false}>
-              dashboardTwo
+              dashboard
             </Link>
             <Link href="/contactForm" className="hover:text-primary" prefetch={false}>
               Contact Us
