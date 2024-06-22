@@ -1,12 +1,8 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/xFVtlDrwQWT
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@/components/ui/dropdown-menu"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
+import Image from 'next/image';
 
 export default function Component() {
   return (
@@ -24,7 +20,7 @@ export default function Component() {
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
-                <img
+                <Image
                   src="/house1.jpg"
                   width={300}
                   height={200}
@@ -59,7 +55,7 @@ export default function Component() {
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
-                <img
+                <Image
                   src="/house2.jpg"
                   width={300}
                   height={200}
@@ -94,7 +90,7 @@ export default function Component() {
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
-                <img
+                <Image 
                   src="/house3.jpg"
                   width={300}
                   height={200}

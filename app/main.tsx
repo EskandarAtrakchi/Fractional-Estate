@@ -86,13 +86,13 @@ export default function HomePage() {
                   </li>
                   <li>
                     <div className="flex gap-2 justify-center items-center">
-                      <img
+                      <Image
                         src="/App-Store_button.png"
                         width="150"
                         height="150"
                         alt="Mobile-App"
                       />
-                      <img
+                      <Image
                         src="/Google-Play_button.png"
                         width="150"
                         height="150"
@@ -103,10 +103,10 @@ export default function HomePage() {
                 </ul>
               </div>
               <div>
-                <img
+                <Image
                   src="/mobile.png"
-                  width="auto"
-                  height="auto"
+                  width="400"
+                  height="400"
                   alt="Mobile-App"
                 />
               </div>
