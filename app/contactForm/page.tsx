@@ -14,7 +14,7 @@ export default function Component() {
           </h2>
           <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Have a project in mind or just want to say hello? Fill out the form
-            and I'll get back to you as soon as possible.
+            and I will get back to you as soon as possible.
           </p>
         </div>
         <Card className="w-full max-w-md">

@@ -56,7 +56,7 @@ export default function HomePage() {
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Cyber Secure offers a comprehensive suite of cybersecurity
                   services to safeguard your business from cyber threats. From
-                  network security to incident response, we've got you covered.
+                  network security to incident response, we have got you covered.
                 </p>
               </div>
             </div>
