@@ -2,14 +2,13 @@
 
 
 import ThemeSwitch from "./ThemeSwitch";
-
-import { NavigationMenu, NavigationMenuList, NavigationMenuLink, NavigationMenuItem, NavigationMenuTrigger, NavigationMenuContent } from "@/components/ui/navigation-menu"
-import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
-import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/components/ui/collapsible"
+// import { NavigationMenu, NavigationMenuList, NavigationMenuLink, NavigationMenuItem, NavigationMenuTrigger, NavigationMenuContent } from "@/components/ui/navigation-menu"
+// import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
+// import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/components/ui/collapsible"
+// import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@/components/ui/dropdown-menu"
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 
@@ -27,11 +26,7 @@ export default function Header() {
         </Link>
 
         <nav className="hidden space-x-4 md:flex">
-          <Link
-            href="/"
-            className="hover:text-primary"
-            prefetch={false}
-          >
+          <Link href="/" className="hover:text-primary" prefetch={false}>
             Home
           </Link>
           <Link
@@ -50,7 +45,7 @@ export default function Header() {
           </Link>
         </nav>
         <div className="flex items-center space-x-4">
-            <ConnectButton />
+          <ConnectButton />
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="icon">
@@ -100,7 +95,7 @@ export default function Header() {
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <div className="flex items-center gap-2">
-                  <ThemeSwitch className="h-4 w-4" />
+                  <ThemeSwitch />
                   <span>Switch Theme</span>
                 </div>
               </DropdownMenuItem>
